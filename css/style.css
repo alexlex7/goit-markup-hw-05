@@ -103,6 +103,11 @@ body {
   width: 21px;
   margin-right: 10px;
   fill: currentColor;
+
+  /* transition-property: fill;
+  transition-duration: 900ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms; */
 }
 
 .contacts-icon-smartphone {
@@ -133,6 +138,11 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .link:hover,
@@ -208,6 +218,11 @@ body {
   border-radius: 4px;
   border: 0;
   padding: 10px 32px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  cursor: pointer;
 }
 
 /*=================== Особенности ===================*/
@@ -356,6 +371,11 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .social-list-link:hover,
@@ -370,6 +390,11 @@ body {
 .social-list-icon {
   display: block;
   fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .social-list-link:hover .social-list-icon,
@@ -398,6 +423,11 @@ body {
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .customers-item-link:hover .customers-link-icon,
@@ -460,6 +490,11 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -508,6 +543,11 @@ body {
   padding: 6px 22px;
   border: unset;
   cursor: pointer;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .filters .item:not(:last-child) {
@@ -557,6 +597,11 @@ body {
   display: block;
   text-decoration: none;
   color: var(--primary-text-color);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
 }
 
 .projsects-list-link:hover,
@@ -566,9 +611,6 @@ body {
 
 .projsects-list-link:hover,
 .projsects-list-link:focus {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
