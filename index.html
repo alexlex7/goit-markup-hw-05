@@ -17,7 +17,7 @@
         <nav class="nav-site">
           <a href="/" class="logo logo-link link"><span>Web</span>Studio</a>
           <ul class="site-nav list">
-            <li class="item">
+            <li class="item current">
               <a class="link active" href="./index.html">Студия</a>
             </li>
             <li class="item">
@@ -58,7 +58,7 @@
     <!--=================Герой=================-->
     <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="hero-btn">Заказать услугу</button>
+        <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
     </section>
 
     <!--=================Особенности=================-->
@@ -94,10 +94,24 @@
       <div class="container">
         <h2 class="what-we-do-title">Чем мы занимаемся</h2>
         <ul class="what-we-do-list list">
-          <li class="what-we-do-item"><img src="./img/what-we-do/box-1.jpg" alt="Разработка вэб-страниц" width="370"></li>
-          <li class="what-we-do-item"><img src="./img/what-we-do/box-2.jpg" alt="Разработка мобильных приложений" width="370">
+          <li class="what-we-do-item">
+            <img src="./img/what-we-do/box-1.jpg" alt="Разработка вэб-страниц" width="370">
+            <div class="what-we-do-wraper">
+              <p class="what-we-do-text">десктопные приложения</p>
+            </div>            
           </li>
-          <li class="what-we-do-item"><img src="./img/what-we-do/box-3.jpg" alt="Дизайн" width="370"></li>
+          <li class="what-we-do-item">
+            <img src="./img/what-we-do/box-2.jpg" alt="Разработка мобильных приложений" width="370">
+            <div class="what-we-do-wraper">
+              <p class="what-we-do-text">мобильные приложения</p>
+            </div>            
+          </li>
+          <li class="what-we-do-item">
+            <img src="./img/what-we-do/box-3.jpg" alt="Дизайн" width="370">
+            <div class="what-we-do-wraper">
+              <p class="what-we-do-text">дизайнерские решения</p>
+            </div>            
+          </li>
         </ul>
       </div>
     </section>
@@ -308,41 +322,7 @@
            </li>
          </ul>
 
-         <!-- <ul class="customers-list list">
-
-           <li class="customers-list-item">
-             <a href="#" class="link customers-item-link">
-               <img src="./img/svg-img/regular-customers/1/Client-1.svg" alt="логотип клиента" class="customers-item-img">
-              </a>
-            </li>
-           <li class="customers-list-item">
-             <a href="#" class="link customers-item-link">
-               <img src="./img/svg-img/regular-customers/1/Client-2.svg" alt="логотип клиента" class="customers-item-img">
-              </a>
-            </li>
-           <li class="customers-list-item">
-             <a href="#" class="link customers-item-link">
-               <img src="./img/svg-img/regular-customers/1/Client-3.svg" alt="логотип клиента" class="customers-item-img">
-              </a>
-            </li>
-           <li class="customers-list-item">
-             <a href="#" class="link customers-item-link">
-               <img src="./img/svg-img/regular-customers/1/Client-4.svg" alt="логотип клиента" class="customers-item-img">
-              </a>
-            </li>
-            <li class="customers-list-item">
-              <a href="#" class="link customers-item-link">
-                <img src="./img/svg-img/regular-customers/1/Client-5.svg" alt="логотип клиента" class="customers-item-img">
-              </a>
-            </li>
-            <li class="customers-list-item">
-              <a href="#" class="link customers-item-link">
-                <img src="./img/svg-img/regular-customers/1/Client-6.svg" alt="логотип клиента" class="customers-item-img">
-              </a>
-            </li> -->
-
-         </ul>
-       </div>
+        </div>
      </section>
 
      <!--Подвал-->
@@ -413,5 +393,39 @@
 
      </footer>
 
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque reiciendis dolorem alias 
+            necessitatibus possimus minus tempore? Nulla voluptatum, delectus aut aliquid quo, consectetur 
+            impedit omnis quae modi labore quos placeat nemo, incidunt excepturi possimus vitae rerum ipsam 
+            harum voluptatibus. Assumenda minima ipsa explicabo, quidem quae deserunt necessitatibus unde alias
+            reprehenderit.
+          </p>
+          <button type="button" class="modal-btn" data-modal-close>
+            <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+                fill="black" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <script src="./js/modal.js"></script>
+
+     <!-- <script>
+       const refs = {
+          openModalBtn: document.querySelector('[data-modal-open]'),
+          closeModalBtn: document.querySelector('[data-modal-close]'),
+          backdrop: document.querySelector('[data-backdrop]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+        refs.backdrop.classList.toggle('is-hidden');
+        }
+     </script> -->
      </body>
 </html>
